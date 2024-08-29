@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind Techno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .icon-bar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 12px 0;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 36px;
+            text-decoration: none;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        .container {
+            display: flex;
+            height: 80vh;
+        }
+
+        .left-side {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .right-side {
+            width: 70%;
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-side .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .right-side button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .watch-video {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .subscribe {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function watchVideo() {
+            window.location.href = 'https://www.example.com/video';
+        }
+
+        function subscribe() {
+            window.location.href = 'https://www.example.com/subscribe';
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">MASTER MIND</h1>
+    <hr>
+    <div class="icon-bar">
+        <a class="active" href="#"><i class="fa fa-home"></i></a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-globe"></i></a>
+        <a href="#"><i class="fa fa-trash"></i></a>
+    </div>
+
+    <div class="container">
+        <div class="left-side">
+            <h2>Left Side Content</h2>
+            <p>This section takes up 30% of the width.</p>
+        </div>
+        <div class="right-side">
+            <div class="buttons">
+                <button class="watch-video" onclick="watchVideo()">Watch Video</button>
+                <button class="subscribe" onclick="subscribe()">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Visit us at <a href="https://www.mastermindtechno.in">www.mastermindtechno.in</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind Techno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            background-color: #555;
+            padding: 10px;
+            color: white;
+            overflow: auto;
+        }
+
+        .nav-bar .heading {
+            flex: 1;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .nav-bar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-bar .nav-links a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-bar .nav-links a:hover {
+            color: #04AA6D;
+        }
+
+        .container {
+            display: flex;
+            height: 80vh;
+        }
+
+        .left-side {
+            width: 30%;
+            background-color: gray;
+            padding: 20px;
+        }
+
+        .right-side {
+            width: 70%;
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .right-side .buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .right-side button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 50px;
+            border: 1px solid black;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            color: black;
+            background-color: #d7e0e3;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .right-side button:hover {
+            background-color: #b0bec5;
+            transform: scale(1.05);
+        }
+
+        .right-side p {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="heading">MASTER MIND</div>
+        <div class="nav-links">
+            <a href="#"><i class="fa fa-home"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-info-circle"></i></a>
+            <a href="#"><i class="fa fa-images"></i></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-side">
+            <h2>Slogan</h2>
+            <p>Education is the spark that lights up a mind.</p>
+        </div>
+        <div class="right-side">
+            <h1>Welcome</h1>
+            <p>This course is about learning DevOps</p>
+            <div class="buttons">
+                <button class="watch-video"><span>Watch Video</span></button>
+                <button class="subscribe"><span>Subscribe</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Visit us at <a href="https://www.mastermindtechno.in">www.mastermindtechno.in</a></p>
+    </footer>
+</body>
+</html>
